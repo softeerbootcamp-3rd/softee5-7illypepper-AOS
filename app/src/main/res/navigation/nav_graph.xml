@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <activity android:id="@+id/splashActivity" android:name="com.example.warmingup.SplashActivity"
+              android:label="activity_splash" tools:layout="@layout/activity_splash"/>
+    <fragment android:id="@+id/mainFragment" android:name="com.example.warmingup.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_selectFragment1" app:destination="@id/selectFragment1"/>
+    </fragment>
+    <fragment android:id="@+id/selectFragment1" android:name="com.example.warmingup.SelectFragment1"
+              android:label="fragment_select1" tools:layout="@layout/fragment_select1"/>
+    <activity android:id="@+id/mainActivity2" android:name="com.example.warmingup.MainActivity"
+              android:label="activity_main" tools:layout="@layout/activity_main"/>
+</navigation>
